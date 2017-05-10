@@ -1,0 +1,444 @@
+2017-05-04 18:45:23,632 DEBUG POST http://127.0.0.1:50625/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 18:45:23,694 DEBUG Finished Request
+2017-05-04 18:45:24,411 ERROR Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+2017-05-04 18:46:48,372 INFO PARAMS: {'q': 'Saurabh Sathe'}
+2017-05-04 18:46:48,378 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 18:46:48,378 DEBUG Including body in call to sign: False
+2017-05-04 18:46:48,381 DEBUG Collected params: [(u'q', u'Saurabh Sathe'), (u'oauth_nonce', u'154356146574513342311493903808'), (u'oauth_timestamp', u'1493903808'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 18:46:48,381 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=154356146574513342311493903808&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493903808&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Saurabh%20Sathe
+2017-05-04 18:46:48,381 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 18:46:48,381 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D154356146574513342311493903808%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493903808%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DSaurabh%2520Sathe
+2017-05-04 18:46:48,424 DEBUG Signature: x5ylmeg3JwJKNIafBEV4/CZL32o=
+2017-05-04 18:46:48,424 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Saurabh+Sathe
+2017-05-04 18:46:48,424 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="154356146574513342311493903808", oauth_timestamp="1493903808", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="x5ylmeg3JwJKNIafBEV4%2FCZL32o%3D"'}
+2017-05-04 18:46:48,424 DEBUG Updated body: None
+2017-05-04 18:46:48,426 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 18:46:51,506 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Saurabh+Sathe HTTP/1.1" 200 35535
+2017-05-04 18:48:30,171 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/url {"url": "https://www.linkedin.com", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29"}
+2017-05-04 18:48:35,867 DEBUG Finished Request
+2017-05-04 18:48:35,867 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/url {"url": "https://www.linkedin.com/pub/dir/?firstName=Saurabh&lastName=Sathe", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29"}
+2017-05-04 18:48:37,341 DEBUG Finished Request
+2017-05-04 18:48:37,341 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29"}
+2017-05-04 18:48:37,371 DEBUG Finished Request
+2017-05-04 18:48:37,371 DEBUG https://www.linkedin.com/pub/dir/?firstName=Saurabh&lastName=Sathe
+2017-05-04 18:48:37,371 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29"}
+2017-05-04 18:48:37,403 DEBUG Finished Request
+2017-05-04 18:48:37,403 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/elements {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "value": "//div[@class=\"profile-card\"]"}
+2017-05-04 18:48:37,464 DEBUG Finished Request
+2017-05-04 18:48:37,464 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917456/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917456", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:37,605 DEBUG Finished Request
+2017-05-04 18:48:37,605 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917467/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917467"}
+2017-05-04 18:48:37,819 DEBUG Finished Request
+2017-05-04 18:48:37,819 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917456/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917456", "value": ".//a/img"}
+2017-05-04 18:48:37,923 DEBUG Finished Request
+2017-05-04 18:48:37,930 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917468/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917468"}
+2017-05-04 18:48:38,214 DEBUG Finished Request
+2017-05-04 18:48:38,214 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917456/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917456", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:38,292 DEBUG Finished Request
+2017-05-04 18:48:38,292 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917469/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917469"}
+2017-05-04 18:48:38,464 DEBUG Finished Request
+2017-05-04 18:48:38,480 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917457/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917457", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:38,588 DEBUG Finished Request
+2017-05-04 18:48:38,588 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917470/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917470"}
+2017-05-04 18:48:38,744 DEBUG Finished Request
+2017-05-04 18:48:38,744 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917457/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917457", "value": ".//a/img"}
+2017-05-04 18:48:38,822 DEBUG Finished Request
+2017-05-04 18:48:38,822 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917471/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917471"}
+2017-05-04 18:48:38,901 DEBUG Finished Request
+2017-05-04 18:48:38,917 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917457/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917457", "value": ".//a/img"}
+2017-05-04 18:48:38,963 DEBUG Finished Request
+2017-05-04 18:48:38,979 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917471/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917471"}
+2017-05-04 18:48:39,026 DEBUG Finished Request
+2017-05-04 18:48:39,026 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917457/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917457", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:39,072 DEBUG Finished Request
+2017-05-04 18:48:39,072 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917472/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917472"}
+2017-05-04 18:48:39,121 DEBUG Finished Request
+2017-05-04 18:48:39,121 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917458/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917458", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:39,220 DEBUG Finished Request
+2017-05-04 18:48:39,220 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917473/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917473"}
+2017-05-04 18:48:39,344 DEBUG Finished Request
+2017-05-04 18:48:39,344 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917458/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917458", "value": ".//a/img"}
+2017-05-04 18:48:39,407 DEBUG Finished Request
+2017-05-04 18:48:39,407 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917474/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917474"}
+2017-05-04 18:48:39,453 DEBUG Finished Request
+2017-05-04 18:48:39,453 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917458/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917458", "value": ".//a/img"}
+2017-05-04 18:48:39,484 DEBUG Finished Request
+2017-05-04 18:48:39,484 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917474/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917474"}
+2017-05-04 18:48:39,530 DEBUG Finished Request
+2017-05-04 18:48:39,530 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917458/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917458", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:39,655 DEBUG Finished Request
+2017-05-04 18:48:40,473 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917475/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917475"}
+2017-05-04 18:48:40,552 DEBUG Finished Request
+2017-05-04 18:48:40,552 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917459/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917459", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:40,630 DEBUG Finished Request
+2017-05-04 18:48:40,630 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917476/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917476"}
+2017-05-04 18:48:40,755 DEBUG Finished Request
+2017-05-04 18:48:40,755 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917459/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917459", "value": ".//a/img"}
+2017-05-04 18:48:40,832 DEBUG Finished Request
+2017-05-04 18:48:40,848 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917477/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917477"}
+2017-05-04 18:48:40,894 DEBUG Finished Request
+2017-05-04 18:48:40,894 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917459/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917459", "value": ".//a/img"}
+2017-05-04 18:48:40,911 DEBUG Finished Request
+2017-05-04 18:48:40,911 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917477/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917477"}
+2017-05-04 18:48:40,989 DEBUG Finished Request
+2017-05-04 18:48:40,989 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917459/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917459", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:41,098 DEBUG Finished Request
+2017-05-04 18:48:41,098 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917478/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917478"}
+2017-05-04 18:48:41,144 DEBUG Finished Request
+2017-05-04 18:48:41,144 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917460/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917460", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:41,190 DEBUG Finished Request
+2017-05-04 18:48:41,190 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917479/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917479"}
+2017-05-04 18:48:41,346 DEBUG Finished Request
+2017-05-04 18:48:41,346 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917460/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917460", "value": ".//a/img"}
+2017-05-04 18:48:41,424 DEBUG Finished Request
+2017-05-04 18:48:41,424 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917480/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917480"}
+2017-05-04 18:48:41,471 DEBUG Finished Request
+2017-05-04 18:48:41,471 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917460/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917460", "value": ".//a/img"}
+2017-05-04 18:48:41,480 DEBUG Finished Request
+2017-05-04 18:48:41,480 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917480/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917480"}
+2017-05-04 18:48:41,525 DEBUG Finished Request
+2017-05-04 18:48:41,525 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917460/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917460", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:41,579 DEBUG Finished Request
+2017-05-04 18:48:41,579 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917481/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917481"}
+2017-05-04 18:48:41,615 DEBUG Finished Request
+2017-05-04 18:48:41,615 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917461/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917461", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:41,654 DEBUG Finished Request
+2017-05-04 18:48:41,654 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917482/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917482"}
+2017-05-04 18:48:41,746 DEBUG Finished Request
+2017-05-04 18:48:41,746 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917461/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917461", "value": ".//a/img"}
+2017-05-04 18:48:41,822 DEBUG Finished Request
+2017-05-04 18:48:41,822 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917483/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917483"}
+2017-05-04 18:48:41,854 DEBUG Finished Request
+2017-05-04 18:48:41,854 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917461/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917461", "value": ".//a/img"}
+2017-05-04 18:48:41,884 DEBUG Finished Request
+2017-05-04 18:48:42,920 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917483/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917483"}
+2017-05-04 18:48:42,967 DEBUG Finished Request
+2017-05-04 18:48:42,983 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917461/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917461", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:43,029 DEBUG Finished Request
+2017-05-04 18:48:43,029 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917484/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917484"}
+2017-05-04 18:48:43,075 DEBUG Finished Request
+2017-05-04 18:48:43,075 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917462/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917462", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:43,122 DEBUG Finished Request
+2017-05-04 18:48:43,122 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917485/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917485"}
+2017-05-04 18:48:43,216 DEBUG Finished Request
+2017-05-04 18:48:43,216 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917462/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917462", "value": ".//a/img"}
+2017-05-04 18:48:43,279 DEBUG Finished Request
+2017-05-04 18:48:43,279 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917486/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917486"}
+2017-05-04 18:48:43,434 DEBUG Finished Request
+2017-05-04 18:48:43,434 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917462/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917462", "value": ".//a/img"}
+2017-05-04 18:48:43,450 DEBUG Finished Request
+2017-05-04 18:48:43,450 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917486/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917486"}
+2017-05-04 18:48:43,513 DEBUG Finished Request
+2017-05-04 18:48:43,513 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917462/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917462", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:43,575 DEBUG Finished Request
+2017-05-04 18:48:43,575 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917487/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917487"}
+2017-05-04 18:48:43,605 DEBUG Finished Request
+2017-05-04 18:48:43,605 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917463/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917463", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:43,684 DEBUG Finished Request
+2017-05-04 18:48:43,684 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917488/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917488"}
+2017-05-04 18:48:43,773 DEBUG Finished Request
+2017-05-04 18:48:43,773 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917463/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917463", "value": ".//a/img"}
+2017-05-04 18:48:43,806 DEBUG Finished Request
+2017-05-04 18:48:43,809 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917489/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917489"}
+2017-05-04 18:48:43,845 DEBUG Finished Request
+2017-05-04 18:48:43,845 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917463/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917463", "value": ".//a/img"}
+2017-05-04 18:48:43,871 DEBUG Finished Request
+2017-05-04 18:48:43,871 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917489/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917489"}
+2017-05-04 18:48:43,918 DEBUG Finished Request
+2017-05-04 18:48:43,918 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917463/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917463", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:43,950 DEBUG Finished Request
+2017-05-04 18:48:43,966 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917490/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917490"}
+2017-05-04 18:48:44,012 DEBUG Finished Request
+2017-05-04 18:48:44,012 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917464/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917464", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:44,059 DEBUG Finished Request
+2017-05-04 18:48:44,059 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917491/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917491"}
+2017-05-04 18:48:44,140 DEBUG Finished Request
+2017-05-04 18:48:44,140 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917464/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917464", "value": ".//a/img"}
+2017-05-04 18:48:44,168 DEBUG Finished Request
+2017-05-04 18:48:44,168 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917492/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917492"}
+2017-05-04 18:48:44,203 DEBUG Finished Request
+2017-05-04 18:48:44,203 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917464/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917464", "value": ".//a/img"}
+2017-05-04 18:48:44,250 DEBUG Finished Request
+2017-05-04 18:48:44,250 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917492/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917492"}
+2017-05-04 18:48:44,296 DEBUG Finished Request
+2017-05-04 18:48:44,296 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917464/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917464", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:44,344 DEBUG Finished Request
+2017-05-04 18:48:44,344 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917493/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917493"}
+2017-05-04 18:48:44,390 DEBUG Finished Request
+2017-05-04 18:48:44,390 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917465/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917465", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:44,437 DEBUG Finished Request
+2017-05-04 18:48:44,437 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917494/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917494"}
+2017-05-04 18:48:44,525 DEBUG Finished Request
+2017-05-04 18:48:44,526 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917465/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917465", "value": ".//a/img"}
+2017-05-04 18:48:44,563 DEBUG Finished Request
+2017-05-04 18:48:44,563 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917495/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917495"}
+2017-05-04 18:48:44,617 DEBUG Finished Request
+2017-05-04 18:48:44,617 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917465/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917465", "value": ".//a/img"}
+2017-05-04 18:48:44,638 DEBUG Finished Request
+2017-05-04 18:48:44,640 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917495/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917495"}
+2017-05-04 18:48:44,677 DEBUG Finished Request
+2017-05-04 18:48:44,677 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917465/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917465", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:44,701 DEBUG Finished Request
+2017-05-04 18:48:44,703 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917496/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917496"}
+2017-05-04 18:48:44,743 DEBUG Finished Request
+2017-05-04 18:48:44,743 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917466/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917466", "value": ".//div[@class=\"content\"]"}
+2017-05-04 18:48:44,836 DEBUG Finished Request
+2017-05-04 18:48:44,836 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917497/text {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917497"}
+2017-05-04 18:48:44,947 DEBUG Finished Request
+2017-05-04 18:48:44,947 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917466/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917466", "value": ".//a/img"}
+2017-05-04 18:48:45,009 DEBUG Finished Request
+2017-05-04 18:48:45,009 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917498/attribute/src {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "src", "id": ":wdc:1493903917498"}
+2017-05-04 18:48:45,039 DEBUG Finished Request
+2017-05-04 18:48:45,039 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917466/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917466", "value": ".//a/img"}
+2017-05-04 18:48:45,071 DEBUG Finished Request
+2017-05-04 18:48:45,071 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917498/attribute/data-delayed-url {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "data-delayed-url", "id": ":wdc:1493903917498"}
+2017-05-04 18:48:45,118 DEBUG Finished Request
+2017-05-04 18:48:45,118 DEBUG POST http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917466/element {"using": "xpath", "sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "id": ":wdc:1493903917466", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-04 18:48:45,164 DEBUG Finished Request
+2017-05-04 18:48:45,164 DEBUG GET http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29/element/:wdc:1493903917499/attribute/href {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29", "name": "href", "id": ":wdc:1493903917499"}
+2017-05-04 18:48:45,210 DEBUG Finished Request
+2017-05-04 18:48:45,210 DEBUG DELETE http://127.0.0.1:50625/wd/hub/session/bb493180-30cb-11e7-a730-cf45f70e5c29 {"sessionId": "bb493180-30cb-11e7-a730-cf45f70e5c29"}
+2017-05-04 18:48:45,226 DEBUG Finished Request
+2017-05-04 20:09:45,809 DEBUG POST http://127.0.0.1:50760/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 20:09:45,858 DEBUG Finished Request
+2017-05-04 20:09:46,494 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:09:46,510 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:09:46,510 DEBUG Including body in call to sign: False
+2017-05-04 20:09:46,510 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'123257917569856842151493908786'), (u'oauth_timestamp', u'1493908786'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:09:46,510 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=123257917569856842151493908786&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493908786&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:09:46,510 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:09:46,510 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D123257917569856842151493908786%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493908786%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:09:46,510 DEBUG Signature: hg+1O8zMMT+tBp+/H/EIxVwFHko=
+2017-05-04 20:09:46,510 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:09:46,510 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="123257917569856842151493908786", oauth_timestamp="1493908786", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="hg%2B1O8zMMT%2BtBp%2B%2FH%2FEIxVwFHko%3D"'}
+2017-05-04 20:09:46,510 DEBUG Updated body: None
+2017-05-04 20:09:46,510 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:09:48,987 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:19:06,480 DEBUG POST http://127.0.0.1:50773/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 20:19:06,543 DEBUG Finished Request
+2017-05-04 20:19:07,134 ERROR Internal Server Error: /facebook
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/facebook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 20:19:23,733 ERROR Internal Server Error: /all
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/all/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 20:19:32,414 ERROR Internal Server Error: /facebook
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/facebook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 20:19:41,966 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:19:41,982 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:19:41,982 DEBUG Including body in call to sign: False
+2017-05-04 20:19:41,982 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'29559834742207344311493909381'), (u'oauth_timestamp', u'1493909381'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:19:41,982 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=29559834742207344311493909381&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493909381&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:19:41,982 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:19:41,982 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D29559834742207344311493909381%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493909381%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:19:41,982 DEBUG Signature: qE4hfOf+vlYnf5Rl8wIGNiOOEzI=
+2017-05-04 20:19:41,982 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:19:41,982 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="29559834742207344311493909381", oauth_timestamp="1493909381", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="qE4hfOf%2BvlYnf5Rl8wIGNiOOEzI%3D"'}
+2017-05-04 20:19:41,982 DEBUG Updated body: None
+2017-05-04 20:19:41,982 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:19:44,397 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:32:40,500 DEBUG POST http://127.0.0.1:50786/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 20:32:40,546 DEBUG Finished Request
+2017-05-04 20:32:40,717 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:32:40,717 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:32:40,717 DEBUG Including body in call to sign: False
+2017-05-04 20:32:40,717 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'130954703947678385411493910160'), (u'oauth_timestamp', u'1493910160'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:32:40,717 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=130954703947678385411493910160&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910160&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:32:40,717 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:32:40,717 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D130954703947678385411493910160%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910160%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:32:40,717 DEBUG Signature: 2404cLkMPIoNmLQg+40Zj4B7fJQ=
+2017-05-04 20:32:40,717 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:32:40,717 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="130954703947678385411493910160", oauth_timestamp="1493910160", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="2404cLkMPIoNmLQg%2B40Zj4B7fJQ%3D"'}
+2017-05-04 20:32:40,717 DEBUG Updated body: None
+2017-05-04 20:32:40,733 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:32:43,101 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:33:24,877 ERROR Internal Server Error: /facebook
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/facebook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 20:34:05,184 ERROR Internal Server Error: /facebook
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/facebook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 20:36:42,040 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:36:42,055 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:36:42,055 DEBUG Including body in call to sign: False
+2017-05-04 20:36:42,055 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'135691327290476798081493910402'), (u'oauth_timestamp', u'1493910402'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:36:42,055 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=135691327290476798081493910402&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910402&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:36:42,055 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:36:42,055 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D135691327290476798081493910402%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910402%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:36:42,055 DEBUG Signature: Xv38QGMDcz7Yg4mIEyuYLNDLxSI=
+2017-05-04 20:36:42,055 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:36:42,055 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="135691327290476798081493910402", oauth_timestamp="1493910402", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="Xv38QGMDcz7Yg4mIEyuYLNDLxSI%3D"'}
+2017-05-04 20:36:42,055 DEBUG Updated body: None
+2017-05-04 20:36:42,072 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:36:43,459 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:36:43,989 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:36:44,005 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:36:44,005 DEBUG Including body in call to sign: False
+2017-05-04 20:36:44,005 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'151981946533707418411493910404'), (u'oauth_timestamp', u'1493910404'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:36:44,005 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=151981946533707418411493910404&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910404&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:36:44,005 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:36:44,005 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D151981946533707418411493910404%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910404%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:36:44,005 DEBUG Signature: KXTAGSujexWHa6jZq5IS6bQRdDw=
+2017-05-04 20:36:44,005 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:36:44,005 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="151981946533707418411493910404", oauth_timestamp="1493910404", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="KXTAGSujexWHa6jZq5IS6bQRdDw%3D"'}
+2017-05-04 20:36:44,005 DEBUG Updated body: None
+2017-05-04 20:36:44,005 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:36:45,282 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:36:45,811 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:36:45,811 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:36:45,811 DEBUG Including body in call to sign: False
+2017-05-04 20:36:45,826 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'121027588194623461781493910405'), (u'oauth_timestamp', u'1493910405'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:36:45,826 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=121027588194623461781493910405&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910405&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:36:45,826 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:36:45,826 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D121027588194623461781493910405%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910405%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:36:45,826 DEBUG Signature: s4rccn7sRS6ppkMFm+rGoQvUdX4=
+2017-05-04 20:36:45,826 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:36:45,826 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="121027588194623461781493910405", oauth_timestamp="1493910405", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="s4rccn7sRS6ppkMFm%2BrGoQvUdX4%3D"'}
+2017-05-04 20:36:45,826 DEBUG Updated body: None
+2017-05-04 20:36:45,826 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:36:47,119 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:41:27,569 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:41:27,569 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:41:27,569 DEBUG Including body in call to sign: False
+2017-05-04 20:41:27,569 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'71779960019142356991493910687'), (u'oauth_timestamp', u'1493910687'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:41:27,569 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=71779960019142356991493910687&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910687&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:41:27,569 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:41:27,569 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D71779960019142356991493910687%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910687%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:41:27,569 DEBUG Signature: HrUhZp4trR6xKy/QgvJ7vazn2Tc=
+2017-05-04 20:41:27,569 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:41:27,569 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="71779960019142356991493910687", oauth_timestamp="1493910687", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="HrUhZp4trR6xKy%2FQgvJ7vazn2Tc%3D"'}
+2017-05-04 20:41:27,569 DEBUG Updated body: None
+2017-05-04 20:41:27,585 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:41:28,898 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:41:29,960 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-05-04 20:41:29,992 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-05-04 20:41:30,007 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-05-04 20:41:30,023 WARNING Not Found: /static/rest_framework/css/default.css
+2017-05-04 20:41:30,055 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-05-04 20:41:30,085 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-05-04 20:41:30,101 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-05-04 20:41:30,117 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-05-04 20:41:30,132 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-05-04 20:41:30,164 WARNING Not Found: /static/rest_framework/js/default.js
+2017-05-04 20:41:30,444 WARNING Not Found: /favicon.ico
+2017-05-04 20:41:42,555 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 20:41:42,555 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 20:41:42,555 DEBUG Including body in call to sign: False
+2017-05-04 20:41:42,555 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'130729650536000908411493910702'), (u'oauth_timestamp', u'1493910702'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 20:41:42,555 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=130729650536000908411493910702&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493910702&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 20:41:42,555 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 20:41:42,555 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D130729650536000908411493910702%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493910702%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 20:41:42,555 DEBUG Signature: lUpwE7pmLm7ojX6FrcSNem8f73Q=
+2017-05-04 20:41:42,555 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 20:41:42,555 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="130729650536000908411493910702", oauth_timestamp="1493910702", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="lUpwE7pmLm7ojX6FrcSNem8f73Q%3D"'}
+2017-05-04 20:41:42,555 DEBUG Updated body: None
+2017-05-04 20:41:42,571 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 20:41:43,897 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 20:52:38,986 DEBUG POST http://127.0.0.1:50805/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 20:52:39,033 DEBUG Finished Request
+2017-05-04 20:52:40,342 ERROR Internal Server Error: /facebook
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/facebook/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-04 21:10:13,507 DEBUG POST http://127.0.0.1:50818/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 21:10:13,555 DEBUG Finished Request
+2017-05-04 21:10:13,710 ERROR Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+2017-05-04 21:10:32,578 INFO PARAMS: {'q': 'Abhilash Tiwari'}
+2017-05-04 21:10:32,578 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-04 21:10:32,578 DEBUG Including body in call to sign: False
+2017-05-04 21:10:32,578 DEBUG Collected params: [(u'q', u'Abhilash Tiwari'), (u'oauth_nonce', u'121944350968116621301493912432'), (u'oauth_timestamp', u'1493912432'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-04 21:10:32,578 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=121944350968116621301493912432&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1493912432&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=Abhilash%20Tiwari
+2017-05-04 21:10:32,578 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-04 21:10:32,578 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D121944350968116621301493912432%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1493912432%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3DAbhilash%2520Tiwari
+2017-05-04 21:10:32,578 DEBUG Signature: Zj27ORwXvtOy7WWdA9yFfDvgFP8=
+2017-05-04 21:10:32,581 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=Abhilash+Tiwari
+2017-05-04 21:10:32,582 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="121944350968116621301493912432", oauth_timestamp="1493912432", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="Zj27ORwXvtOy7WWdA9yFfDvgFP8%3D"'}
+2017-05-04 21:10:32,582 DEBUG Updated body: None
+2017-05-04 21:10:32,584 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-04 21:10:35,176 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=Abhilash+Tiwari HTTP/1.1" 200 42864
+2017-05-04 22:09:33,601 DEBUG POST http://127.0.0.1:50831/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 22:09:33,664 DEBUG Finished Request
+2017-05-04 22:09:35,382 WARNING Not Found: /favicon.ico
+2017-05-04 22:34:20,194 DEBUG POST http://127.0.0.1:50841/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-04 22:34:20,256 DEBUG Finished Request
+2017-05-04 22:34:22,253 WARNING Not Found: /favicon.ico

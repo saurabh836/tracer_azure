@@ -1,0 +1,1214 @@
+Not Found: /favicon.ico
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Chrome(service_log_path='C:/Tracer/tracer-master/tracer1/socialmedia/ghostdriver.log')
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Chrome(service_log_path='C:/Tracer/tracer-master/tracer1/socialmedia/ghostdriver.log')
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Chrome()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Chrome()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Phantomjs()
+AttributeError: 'module' object has no attribute 'Phantomjs'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Phantomjs()
+AttributeError: 'module' object has no attribute 'Phantomjs'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.Phantomjs()
+AttributeError: 'module' object has no attribute 'Phantomjs'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS(service_log_path=None)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 7, in Linkedin
+    driver = webdriver.PhantomJS(service_log_path=None)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /favicon.ico
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/default.css
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 88, in welcome
+    message = 'You submitted: %r' % request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 88, in welcome
+    message = 'You submitted: %r' % request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 88, in welcome
+    message = 'You submitted: %r' % request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 88, in welcome
+    message = 'You submitted: %r' % request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Not Found: /q=Abhilash Tiwari
+Not Found: /q=Abhilash
+Not Found: /linkedin/q=Abhilash tiwari
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 37, in linkedIn_list
+    return HttpResponse(ln.chk_fun(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Not Found: /linkedin/q=Abhilash Tiwari
+Not Found: /favicon.ico
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/default.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+Internal Server Error: /facebook/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 26, in facebook_list
+    print "{" + str(request.POST['nam'])
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'nam'"
+Internal Server Error: /facebook/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 26, in facebook_list
+    print "{" + str(request.POST['nam'])
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'nam'"
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 85, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 50, in twitter_list
+    return HttpResponse(get_twitter(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 50, in twitter_list
+    return HttpResponse(get_twitter(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 50, in twitter_list
+    return HttpResponse(get_twitter(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /twitter
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.172.196.97:81/twitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 50, in twitter_list
+    return HttpResponse(get_twitter(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 405, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 17, in <module>
+    @app.after_request
+NameError: name 'app' is not defined
+Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add u'clientapi.ipip.net' to ALLOWED_HOSTS.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 85, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 85, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Not Found: /q=Abhilash
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 36, in linkedIn_list
+    return HttpResponse(ln.chk_fun(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /twitter/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 9, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /twitter
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 9, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /twitter
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 62, in process_request
+    if self.should_redirect_with_slash(request):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\middleware\common.py", line 80, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 6, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 9, in Linkedin
+    driver = webdriver.PhantomJS()
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'

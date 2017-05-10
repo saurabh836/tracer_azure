@@ -1,0 +1,742 @@
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open("cookie.pkl", "rb"))
+IOError: [Errno 2] No such file or directory: 'cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open("cookie.pkl", "rb"))
+IOError: [Errno 2] No such file or directory: 'cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open(".\tracer1\socialmedia\cookie.pkl", "rb"))
+IOError: [Errno 22] invalid mode ('rb') or filename: '.\tracer1\\socialmedia\\cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open(".\tracer1\socialmedia\cookie.pkl", "rb"))
+IOError: [Errno 22] invalid mode ('rb') or filename: '.\tracer1\\socialmedia\\cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open("cookie.pkl", "rb"))
+IOError: [Errno 2] No such file or directory: 'cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open("C:/virtualenvs/myenv/Scripts/cookie.pkl", "rb"))
+IOError: [Errno 2] No such file or directory: 'C:/virtualenvs/myenv/Scripts/cookie.pkl'
+Invalid HTTP_HOST header: u'10.0.1.4:81'. You may need to add u'10.0.1.4' to ALLOWED_HOSTS.
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 15, in link
+    cookies = pickle.load(open("C:/virtualenvs/myenv/Scripts/cookie.pkl", "rb"))
+IOError: [Errno 2] No such file or directory: 'C:/virtualenvs/myenv/Scripts/cookie.pkl'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 7, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 10, in Linkedin
+    driver = webdriver.Chrome( service_log_path="C:/Tracer/tracer-master/logs/slog.log")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    desired_capabilities=desired_capabilities)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 98, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Not Found: /linkedin/q=Saurabh Sathe
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\urls\resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File ".\tracer\urls.py", line 20, in <module>
+    from tracer1 import views
+  File ".\tracer1\views.py", line 6, in <module>
+    from tracer1.socialmedia.link_search import Linkedin
+  File ".\tracer1\socialmedia\link_search.py", line 7, in <module>
+    class Linkedin(object):
+  File ".\tracer1\socialmedia\link_search.py", line 10, in Linkedin
+    driver = webdriver.PhantomJS() # service_log_path="C:/Tracer/tracer-master/logs/slog.log")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 51, in __init__
+    log_path=service_log_path)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\phantomjs\service.py", line 50, in __init__
+    service.Service.__init__(self, executable_path, port=port, log_file=open(log_path, 'w'))
+IOError: [Errno 13] Permission denied: 'ghostdriver.log'
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    driver.get("https://www.linkedin.com")
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 247, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 464, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\virtualenvs\myenv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 525, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "c:\python27\Lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "c:\python27\Lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "c:\python27\Lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "c:\python27\Lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "c:\python27\Lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10061] No connection could be made because the target machine actively refused it>
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 39, in linkedIn_list
+    return HttpResponse(ln.link(request.GET['q']))
+  File ".\tracer1\socialmedia\link_search.py", line 12, in link
+    driver = self.driver
+AttributeError: 'Linkedin' object has no attribute 'driver'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add u'clientapi.ipip.net' to ALLOWED_HOSTS.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"

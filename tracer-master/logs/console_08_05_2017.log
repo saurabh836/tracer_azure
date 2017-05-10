@@ -1,0 +1,294 @@
+2017-05-08 11:14:53,323 DEBUG POST http://127.0.0.1:53900/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "phantomjs.page.settings.loadImages": false, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"phantomjs.page.settings.loadImages": false, "platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-08 11:14:53,323 DEBUG POST http://127.0.0.1:53901/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "phantomjs.page.settings.loadImages": false, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"phantomjs.page.settings.loadImages": false, "platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-08 11:14:53,403 DEBUG Finished Request
+2017-05-08 11:14:53,496 DEBUG Finished Request
+2017-05-08 11:14:55,417 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+2017-05-08 11:14:55,417 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
+2017-05-08 11:14:56,996 WARNING Not Found: /favicon.ico
+2017-05-08 11:15:56,144 WARNING Not Found: /favicon.ico
+2017-05-08 11:16:19,513 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/url {"url": "https://www.linkedin.com", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670"}
+2017-05-08 11:16:24,996 DEBUG Finished Request
+2017-05-08 11:16:24,996 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/url {"url": "https://www.linkedin.com/pub/dir/?firstName=Swapnil&lastName=Yadav", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670"}
+2017-05-08 11:16:27,638 DEBUG Finished Request
+2017-05-08 11:16:27,670 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670"}
+2017-05-08 11:16:27,701 DEBUG Finished Request
+2017-05-08 11:16:27,701 DEBUG https://www.linkedin.com/pub/dir/?firstName=Swapnil&lastName=Yadav
+2017-05-08 11:16:27,701 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670"}
+2017-05-08 11:16:27,717 DEBUG Finished Request
+2017-05-08 11:16:27,717 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/elements {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "value": "//div[@class=\"profile-card\"]"}
+2017-05-08 11:16:27,779 DEBUG Finished Request
+2017-05-08 11:16:27,779 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387743/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387743", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:27,842 DEBUG Finished Request
+2017-05-08 11:16:27,842 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387753/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387753"}
+2017-05-08 11:16:27,983 DEBUG Finished Request
+2017-05-08 11:16:27,983 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387743/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387743", "value": ".//a/img"}
+2017-05-08 11:16:28,045 DEBUG Finished Request
+2017-05-08 11:16:28,045 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387754/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387754"}
+2017-05-08 11:16:28,122 DEBUG Finished Request
+2017-05-08 11:16:28,122 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387743/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387743", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:28,232 DEBUG Finished Request
+2017-05-08 11:16:28,232 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387755/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387755"}
+2017-05-08 11:16:28,279 DEBUG Finished Request
+2017-05-08 11:16:28,279 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387744/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387744", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:28,372 DEBUG Finished Request
+2017-05-08 11:16:28,372 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387756/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387756"}
+2017-05-08 11:16:28,543 DEBUG Finished Request
+2017-05-08 11:16:28,543 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387744/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387744", "value": ".//a/img"}
+2017-05-08 11:16:28,637 DEBUG Finished Request
+2017-05-08 11:16:28,637 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387757/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387757"}
+2017-05-08 11:16:28,684 DEBUG Finished Request
+2017-05-08 11:16:28,684 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387744/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387744", "value": ".//a/img"}
+2017-05-08 11:16:28,700 DEBUG Finished Request
+2017-05-08 11:16:28,700 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387757/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387757"}
+2017-05-08 11:16:28,746 DEBUG Finished Request
+2017-05-08 11:16:28,746 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387744/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387744", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:28,809 DEBUG Finished Request
+2017-05-08 11:16:28,809 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387758/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387758"}
+2017-05-08 11:16:28,855 DEBUG Finished Request
+2017-05-08 11:16:28,855 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387745/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387745", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:28,901 DEBUG Finished Request
+2017-05-08 11:16:28,901 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387759/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387759"}
+2017-05-08 11:16:29,010 DEBUG Finished Request
+2017-05-08 11:16:29,010 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387745/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387745", "value": ".//a/img"}
+2017-05-08 11:16:29,174 DEBUG Finished Request
+2017-05-08 11:16:29,177 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387760/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387760"}
+2017-05-08 11:16:29,210 DEBUG Finished Request
+2017-05-08 11:16:29,211 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387745/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387745", "value": ".//a/img"}
+2017-05-08 11:16:29,226 DEBUG Finished Request
+2017-05-08 11:16:29,226 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387760/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387760"}
+2017-05-08 11:16:29,265 DEBUG Finished Request
+2017-05-08 11:16:29,266 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387745/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387745", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:29,342 DEBUG Finished Request
+2017-05-08 11:16:29,342 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387761/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387761"}
+2017-05-08 11:16:29,388 DEBUG Finished Request
+2017-05-08 11:16:29,388 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387746/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387746", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:29,450 DEBUG Finished Request
+2017-05-08 11:16:29,450 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387762/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387762"}
+2017-05-08 11:16:29,558 DEBUG Finished Request
+2017-05-08 11:16:29,559 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387746/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387746", "value": ".//a/img"}
+2017-05-08 11:16:29,591 DEBUG Finished Request
+2017-05-08 11:16:29,592 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387763/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387763"}
+2017-05-08 11:16:29,642 DEBUG Finished Request
+2017-05-08 11:16:29,642 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387746/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387746", "value": ".//a/img"}
+2017-05-08 11:16:29,654 DEBUG Finished Request
+2017-05-08 11:16:29,654 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387763/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387763"}
+2017-05-08 11:16:29,697 DEBUG Finished Request
+2017-05-08 11:16:29,697 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387746/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387746", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:29,743 DEBUG Finished Request
+2017-05-08 11:16:29,746 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387764/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387764"}
+2017-05-08 11:16:29,779 DEBUG Finished Request
+2017-05-08 11:16:29,780 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387747/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387747", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:29,806 DEBUG Finished Request
+2017-05-08 11:16:29,808 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387765/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387765"}
+2017-05-08 11:16:29,900 DEBUG Finished Request
+2017-05-08 11:16:29,901 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387747/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387747", "value": ".//a/img"}
+2017-05-08 11:16:29,947 DEBUG Finished Request
+2017-05-08 11:16:29,950 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387766/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387766"}
+2017-05-08 11:16:29,983 DEBUG Finished Request
+2017-05-08 11:16:29,984 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387747/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387747", "value": ".//a/img"}
+2017-05-08 11:16:30,007 DEBUG Finished Request
+2017-05-08 11:16:30,009 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387766/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387766"}
+2017-05-08 11:16:30,049 DEBUG Finished Request
+2017-05-08 11:16:30,051 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387747/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387747", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:30,140 DEBUG Finished Request
+2017-05-08 11:16:30,142 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387767/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387767"}
+2017-05-08 11:16:30,174 DEBUG Finished Request
+2017-05-08 11:16:30,174 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387748/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387748", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:30,227 DEBUG Finished Request
+2017-05-08 11:16:30,227 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387768/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387768"}
+2017-05-08 11:16:30,368 DEBUG Finished Request
+2017-05-08 11:16:30,368 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387748/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387748", "value": ".//a/img"}
+2017-05-08 11:16:30,414 DEBUG Finished Request
+2017-05-08 11:16:30,414 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387769/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387769"}
+2017-05-08 11:16:30,446 DEBUG Finished Request
+2017-05-08 11:16:30,446 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387748/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387748", "value": ".//a/img"}
+2017-05-08 11:16:30,461 DEBUG Finished Request
+2017-05-08 11:16:30,461 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387769/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387769"}
+2017-05-08 11:16:30,507 DEBUG Finished Request
+2017-05-08 11:16:30,507 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387748/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387748", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:30,585 DEBUG Finished Request
+2017-05-08 11:16:30,585 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387770/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387770"}
+2017-05-08 11:16:30,632 DEBUG Finished Request
+2017-05-08 11:16:30,632 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387749/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387749", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:30,674 DEBUG Finished Request
+2017-05-08 11:16:30,674 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387771/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387771"}
+2017-05-08 11:16:30,790 DEBUG Finished Request
+2017-05-08 11:16:30,790 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387749/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387749", "value": ".//a/img"}
+2017-05-08 11:16:30,885 DEBUG Finished Request
+2017-05-08 11:16:30,885 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387772/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387772"}
+2017-05-08 11:16:30,933 DEBUG Finished Request
+2017-05-08 11:16:30,933 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387749/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387749", "value": ".//a/img"}
+2017-05-08 11:16:30,948 DEBUG Finished Request
+2017-05-08 11:16:30,963 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387772/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387772"}
+2017-05-08 11:16:30,994 DEBUG Finished Request
+2017-05-08 11:16:30,994 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387749/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387749", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:31,058 DEBUG Finished Request
+2017-05-08 11:16:31,058 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387773/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387773"}
+2017-05-08 11:16:31,078 DEBUG Finished Request
+2017-05-08 11:16:31,079 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387750/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387750", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:31,109 DEBUG Finished Request
+2017-05-08 11:16:31,109 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387774/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387774"}
+2017-05-08 11:16:31,219 DEBUG Finished Request
+2017-05-08 11:16:31,219 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387750/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387750", "value": ".//a/img"}
+2017-05-08 11:16:31,282 DEBUG Finished Request
+2017-05-08 11:16:31,282 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387775/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387775"}
+2017-05-08 11:16:31,312 DEBUG Finished Request
+2017-05-08 11:16:31,328 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387750/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387750", "value": ".//a/img"}
+2017-05-08 11:16:31,344 DEBUG Finished Request
+2017-05-08 11:16:31,344 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387775/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387775"}
+2017-05-08 11:16:31,391 DEBUG Finished Request
+2017-05-08 11:16:31,391 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387750/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387750", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:31,453 DEBUG Finished Request
+2017-05-08 11:16:31,453 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387776/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387776"}
+2017-05-08 11:16:31,515 DEBUG Finished Request
+2017-05-08 11:16:31,515 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387751/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387751", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:31,562 DEBUG Finished Request
+2017-05-08 11:16:31,562 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387777/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387777"}
+2017-05-08 11:16:31,674 DEBUG Finished Request
+2017-05-08 11:16:31,674 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387751/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387751", "value": ".//a/img"}
+2017-05-08 11:16:31,724 DEBUG Finished Request
+2017-05-08 11:16:31,724 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387778/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387778"}
+2017-05-08 11:16:31,756 DEBUG Finished Request
+2017-05-08 11:16:31,757 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387751/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387751", "value": ".//a/img"}
+2017-05-08 11:16:31,785 DEBUG Finished Request
+2017-05-08 11:16:31,786 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387778/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387778"}
+2017-05-08 11:16:31,823 DEBUG Finished Request
+2017-05-08 11:16:31,825 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387751/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387751", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:31,976 DEBUG Finished Request
+2017-05-08 11:16:31,976 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387779/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387779"}
+2017-05-08 11:16:32,007 DEBUG Finished Request
+2017-05-08 11:16:32,023 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387752/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387752", "value": ".//div[@class=\"content\"]"}
+2017-05-08 11:16:32,069 DEBUG Finished Request
+2017-05-08 11:16:32,069 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387780/text {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387780"}
+2017-05-08 11:16:30,137 DEBUG Finished Request
+2017-05-08 11:16:30,137 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387752/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387752", "value": ".//a/img"}
+2017-05-08 11:16:30,198 DEBUG Finished Request
+2017-05-08 11:16:30,198 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387781/attribute/src {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "src", "id": ":wdc:1494222387781"}
+2017-05-08 11:16:30,246 DEBUG Finished Request
+2017-05-08 11:16:30,246 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387752/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387752", "value": ".//a/img"}
+2017-05-08 11:16:30,364 DEBUG Finished Request
+2017-05-08 11:16:30,365 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387781/attribute/data-delayed-url {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "data-delayed-url", "id": ":wdc:1494222387781"}
+2017-05-08 11:16:30,404 DEBUG Finished Request
+2017-05-08 11:16:30,404 DEBUG POST http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387752/element {"using": "xpath", "sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "id": ":wdc:1494222387752", "value": ".//a[@class=\"profile-img\"]"}
+2017-05-08 11:16:30,466 DEBUG Finished Request
+2017-05-08 11:16:30,466 DEBUG GET http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670/element/:wdc:1494222387782/attribute/href {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670", "name": "href", "id": ":wdc:1494222387782"}
+2017-05-08 11:16:30,517 DEBUG Finished Request
+2017-05-08 11:16:30,517 DEBUG DELETE http://127.0.0.1:53901/wd/hub/session/758f4100-33b1-11e7-8729-7f6467b2a670 {"sessionId": "758f4100-33b1-11e7-8729-7f6467b2a670"}
+2017-05-08 11:16:30,535 DEBUG Finished Request
+2017-05-08 11:33:08,868 DEBUG POST http://127.0.0.1:54029/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "phantomjs.page.settings.loadImages": false, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"phantomjs.page.settings.loadImages": false, "platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-08 11:33:08,930 DEBUG Finished Request
+2017-05-08 11:33:09,819 DEBUG Starting new HTTPS connection (1): graph.facebook.com
+2017-05-08 11:33:12,375 DEBUG https://graph.facebook.com:443 "GET /v2.8/search?type=user&q=abhiram+bhise&format=json&access_token=EAAPEf2NimqgBAA3OvD9BoRkjGFaBgrIYbAIlXZAHTLlfPJfaR9EwZALNR7CYTysTOdYo0SecrpkvEa5D2rB3ZB9yzD0BRpznh63kt16djaN2as3E5ERQZAtQ2H3qYuednNTjswzP6rl40jxkoZBZBDzbW9VZB9CZCOwZD HTTP/1.1" 200 452
+2017-05-08 11:33:12,763 INFO PARAMS: {'q': 'abhiram bhise'}
+2017-05-08 11:33:12,763 DEBUG Signing request <PreparedRequest [GET]> using client <Client nonce=None, signature_method=HMAC-SHA1, realm=None, encoding=utf-8, timestamp=None, resource_owner_secret=****, decoding=None, verifier=None, signature_type=AUTH_HEADER, rsa_key=None, resource_owner_key=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP, client_secret=****, callback_uri=None, client_key=6THoh0ixs5BqEBHQfaKiwDK8x>
+2017-05-08 11:33:12,763 DEBUG Including body in call to sign: False
+2017-05-08 11:33:12,763 DEBUG Collected params: [(u'q', u'abhiram bhise'), (u'oauth_nonce', u'66694644315082039791494223392'), (u'oauth_timestamp', u'1494223392'), (u'oauth_consumer_key', u'6THoh0ixs5BqEBHQfaKiwDK8x'), (u'oauth_signature_method', u'HMAC-SHA1'), (u'oauth_version', u'1.0'), (u'oauth_token', u'713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP')]
+2017-05-08 11:33:12,763 DEBUG Normalized params: oauth_consumer_key=6THoh0ixs5BqEBHQfaKiwDK8x&oauth_nonce=66694644315082039791494223392&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1494223392&oauth_token=713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP&oauth_version=1.0&q=abhiram%20bhise
+2017-05-08 11:33:12,763 DEBUG Normalized URI: https://api.twitter.com/1.1/users/search.json
+2017-05-08 11:33:12,763 DEBUG Base signing string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fusers%2Fsearch.json&oauth_consumer_key%3D6THoh0ixs5BqEBHQfaKiwDK8x%26oauth_nonce%3D66694644315082039791494223392%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1494223392%26oauth_token%3D713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP%26oauth_version%3D1.0%26q%3Dabhiram%2520bhise
+2017-05-08 11:33:12,779 DEBUG Signature: bRu8VZSMYdnpUso6kqJs6rq28oE=
+2017-05-08 11:33:12,779 DEBUG Updated url: https://api.twitter.com/1.1/users/search.json?q=abhiram+bhise
+2017-05-08 11:33:12,795 DEBUG Updated headers: {u'Host': u'api.twitter.com', u'Authorization': u'OAuth oauth_nonce="66694644315082039791494223392", oauth_timestamp="1494223392", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6THoh0ixs5BqEBHQfaKiwDK8x", oauth_token="713252801351131136-saQqIIzfImXd2ftTDIKYlrpraHG31VP", oauth_signature="bRu8VZSMYdnpUso6kqJs6rq28oE%3D"'}
+2017-05-08 11:33:12,795 DEBUG Updated body: None
+2017-05-08 11:33:12,795 DEBUG Starting new HTTPS connection (1): api.twitter.com
+2017-05-08 11:33:14,118 DEBUG https://api.twitter.com:443 "GET /1.1/users/search.json?q=abhiram+bhise HTTP/1.1" 200 4036
+2017-05-08 11:33:15,365 DEBUG POST http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/url {"url": "https://www.linkedin.com", "sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:20,046 DEBUG Finished Request
+2017-05-08 11:33:20,046 DEBUG POST http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/url {"url": "https://www.linkedin.com/pub/dir/?firstName=abhiram&lastName=bhise", "sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:24,651 DEBUG Finished Request
+2017-05-08 11:33:24,651 DEBUG GET http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/url {"sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:24,773 DEBUG Finished Request
+2017-05-08 11:33:24,773 DEBUG https://www.linkedin.com/in/abhirambhise
+2017-05-08 11:33:24,773 DEBUG GET http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/url {"sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:24,803 DEBUG Finished Request
+2017-05-08 11:33:24,803 DEBUG POST http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/element {"using": "xpath", "sessionId": "02921f30-33b4-11e7-8044-5105639d3b87", "value": ".//div[@class=\"profile-overview\"]"}
+2017-05-08 11:33:24,867 DEBUG Finished Request
+2017-05-08 11:33:24,867 DEBUG GET http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/element/:wdc:1494223404865/text {"sessionId": "02921f30-33b4-11e7-8044-5105639d3b87", "id": ":wdc:1494223404865"}
+2017-05-08 11:33:25,023 DEBUG Finished Request
+2017-05-08 11:33:25,023 DEBUG POST http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/element {"using": "xpath", "sessionId": "02921f30-33b4-11e7-8044-5105639d3b87", "value": ".//div[@class=\"profile-picture\"]/a"}
+2017-05-08 11:33:27,618 DEBUG Finished Request
+2017-05-08 11:33:27,618 DEBUG GET http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87/url {"sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:27,680 DEBUG Finished Request
+2017-05-08 11:33:27,680 DEBUG DELETE http://127.0.0.1:54029/wd/hub/session/02921f30-33b4-11e7-8044-5105639d3b87 {"sessionId": "02921f30-33b4-11e7-8044-5105639d3b87"}
+2017-05-08 11:33:27,727 DEBUG Finished Request
+2017-05-08 11:33:29,266 DEBUG Starting new HTTPS connection (1): www.pinterest.com
+2017-05-08 11:33:30,341 DEBUG https://www.pinterest.com:443 "GET /search/people/?q=abhiram%20bhise HTTP/1.1" 200 None
+2017-05-08 11:33:31,556 DEBUG Starting new HTTPS connection (1): www.googleapis.com
+2017-05-08 11:33:32,289 DEBUG https://www.googleapis.com:443 "GET /plus/v1/people?query=abhiram%20bhise&key=AIzaSyCSQzemPc7tzY_2yW1e_1wi1fmeP7c5XxU HTTP/1.1" 200 1524
+2017-05-08 11:33:32,414 DEBUG Starting new HTTPS connection (1): api.cognitive.microsoft.com
+2017-05-08 11:33:33,721 DEBUG https://api.cognitive.microsoft.com:443 "GET /bing/v5.0/search?q=abhiram+bhise HTTP/1.1" 200 4334
+2017-05-08 17:18:39,036 DEBUG POST http://127.0.0.1:54101/wd/hub/session {"capabilities": {"platform": "ANY", "javascriptEnabled": true, "phantomjs.page.settings.loadImages": false, "alwaysMatch": {}, "browserName": "phantomjs", "version": "", "firstMatch": []}, "desiredCapabilities": {"phantomjs.page.settings.loadImages": false, "platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-05-08 17:18:39,112 DEBUG Finished Request
+2017-05-08 17:18:41,203 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
