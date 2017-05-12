@@ -1,4 +1,4 @@
-Internal Server Error: /bing/
+Internal Server Error: /
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
     response = get_response(request)
@@ -18,12 +18,12 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 123, in bing_list
-    print "{" + str(request.POST['nam'])
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
   File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
     raise MultiValueDictKeyError(repr(key))
-MultiValueDictKeyError: "'nam'"
-Internal Server Error: /bing/
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
     response = get_response(request)
@@ -43,12 +43,12 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 123, in bing_list
-    print "{" + str(request.POST['nam'])
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
   File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
     raise MultiValueDictKeyError(repr(key))
-MultiValueDictKeyError: "'nam'"
-Internal Server Error: /bing/
+MultiValueDictKeyError: "'q'"
+Internal Server Error: /linkedin/
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
     response = get_response(request)
@@ -68,36 +68,462 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 123, in bing_list
-    print "{" + str(request.POST['nam'])
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Internal Server Error: /linkedin/
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 45, in linkedIn_list
+    data = ln.link(nam=respo)
+  File ".\tracer1\socialmedia\link_search.py", line 14, in link
+    "&lastName=" + nam.split(" ", 1)[1]
+IndexError: list index out of range
+Invalid HTTP_HOST header: 'clientapi.ipip.net'. You may need to add u'clientapi.ipip.net' to ALLOWED_HOSTS.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
   File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
     raise MultiValueDictKeyError(repr(key))
-MultiValueDictKeyError: "'nam'"
-Internal Server Error: /facebook/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 31, in facebook_list
-    data = fb.profile_list(name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\fb_search.py", line 66, in profile_list
-    temp.update({"Name": nam.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 1-29: ordinal not in range(128)
+MultiValueDictKeyError: "'q'"
 Internal Server Error: /linkedin/
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
@@ -223,56 +649,6 @@ Traceback (most recent call last):
   File ".\tracer1\socialmedia\link_search.py", line 14, in link
     "&lastName=" + nam.split(" ", 1)[1]
 IndexError: list index out of range
-Internal Server Error: /linkedin/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 45, in linkedIn_list
-    data = ln.link(nam=respo)
-  File ".\tracer1\socialmedia\link_search.py", line 14, in link
-    "&lastName=" + nam.split(" ", 1)[1]
-IndexError: list index out of range
-Internal Server Error: /linkedin/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 45, in linkedIn_list
-    data = ln.link(nam=respo)
-  File ".\tracer1\socialmedia\link_search.py", line 14, in link
-    "&lastName=" + nam.split(" ", 1)[1]
-IndexError: list index out of range
 Internal Server Error: /twitter/
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
@@ -326,8 +702,8 @@ Traceback (most recent call last):
     return json.dumps(uni(x))
   File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
     tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 13-16: ordinal not in range(128)
+Internal Server Error: /
 Traceback (most recent call last):
   File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
     response = get_response(request)
@@ -347,176 +723,8 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Internal Server Error: /twitter/
-Traceback (most recent call last):
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
-    response = get_response(request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\virtualenvs\myenv\lib\site-packages\rest_framework\decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File ".\tracer1\views.py", line 59, in twitter_list
-    data = get_twitter(screen_name=request.POST.get('nam'))
-  File ".\tracer1\socialmedia\twitter_search.py", line 36, in get_twitter
-    return json.dumps(uni(x))
-  File ".\tracer1\socialmedia\twitter_search.py", line 25, in uni
-    tem.update({i.encode("ascii"): k.encode("ascii")})
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 12-16: ordinal not in range(128)
-Not Found: /Tracer
-Not Found: /favicon.ico
-Not Found: /PHP
-Not Found: /get_status.cgi
+  File ".\tracer1\views.py", line 133, in welcome
+    message = request.GET['q']
+  File "C:\virtualenvs\myenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'q'"
