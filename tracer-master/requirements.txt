@@ -2,7 +2,7 @@ appdirs==1.4.3
 BeautifulSoup==3.2.1
 beautifulsoup4==4.5.3
 bs4==0.0.1
-certifi==2017.1.23
+certifi==2022.12.7
 dj-database-url==0.4.2
 Django==1.11
 django-cors-headers==2.0.2
